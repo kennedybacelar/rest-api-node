@@ -13,7 +13,9 @@ mongoose.connect(
     '@cluster0-35wpj.mongodb.net/test?retryWrites=true&w=majority', {
         useNewUrlParser: true, useUnifiedTopology: true
     }
-);      
+);
+mongoose.Promise = global.Promise;
+
 
 app.use(morgan('dev')); //midleware to treat routes
 //The below commands provides info about the request
