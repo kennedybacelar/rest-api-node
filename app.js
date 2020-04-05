@@ -19,6 +19,7 @@ mongoose.Promise = global.Promise;
 
 app.use(morgan('dev')); //midleware to treat routes
 //The below commands provides info about the request
+app.use('/uploads', express.static('uploads')); //making the folder available for everyone
 app.use(bodyParser.urlencoded({extended: false})); //another midleware to treat requests
 app.use(bodyParser.json());
 
