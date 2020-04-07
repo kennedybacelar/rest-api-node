@@ -1,5 +1,6 @@
 {
    "env": {
-       "MONGO_ATLAS_PW": "boleirok10"
-   } 
+       "MONGO_ATLAS_PW": "boleirok10",
+       "JWT_KEY": "secret"
+   }
 }
